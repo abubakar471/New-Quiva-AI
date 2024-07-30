@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-[#051119]`} >
+      <body className={`${poppins.className} bg-[#0F172A]`} >
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-slate-900/0 to-transparent z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
         <Navbar />
 

@@ -5,11 +5,12 @@ import { Boxes } from "../../ui/background-boxes";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowRight, Rotate3D } from "lucide-react";
+import Image from "next/image";
 
 export default function BackgroundBoxesContainer() {
     return (
-        <div className="h-[90vh] relative w-full overflow-hidden flex flex-col items-center rounded-lg pt-44 md:pt-48">
-            <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-slate-900/0 via-slate-900 to-transparent z-20 pointer-events-none" />
+        <div className="min-h-[90vh] relative w-full overflow-hidden flex flex-col items-center rounded-lg pt-44 md:pt-36">
+            <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-[#0F172A]/50 via-[#0F172A] to-[#0F172A]/50 z-20 pointer-events-none" />
 
             <Boxes />
 
@@ -19,7 +20,7 @@ export default function BackgroundBoxesContainer() {
                 </Link>
             </div>
             <h1 className={cn("text-5xl md:text-5xl lg:text-7xl leading-[3.8rem] text-white text-center relative z-20 font-bold px-8 md:px-0")}>
-                Powerful Business AI Bot <br /> Platform, for <span className="bg-clip-text bg-gradient-to-r from-[#20BE72] to-yellow-400 text-transparent">Everyone</span>
+                Powerful Business AI Bot <br /> Platform, for <span className="bg-clip-text bg-gradient-to-r from-[#af5caf] to-yellow-400 text-transparent">Everyone</span>
             </h1>
 
             <div className="w-[80%] md:w-[30%] mx-auto pt-4">
@@ -34,10 +35,16 @@ export default function BackgroundBoxesContainer() {
                     <ArrowRight className="text-green-500" />
                 </Link>
 
-                <Link href={"#"} className="bg-gradient-to-r from-[#20BE72] to-yellow-400 text-white font-bold px-8 py-2 z-20 rounded-full flex items-center gap-2">
+                <Link href={"#"} className="bg-gradient-to-r from-[#af5caf] to-yellow-400 text-white font-bold px-8 py-2 z-20 rounded-full flex items-center gap-2">
                     <Rotate3D className="text-white" />
                     Read the docs
                 </Link>
+            </div>
+
+            <div className="flex items-center justify-normal pt-12 pb-6 z-20 w-[70%] mx-auto">
+                <div className="p-2 bg-white rounded-xl h-[600px] w-full flex items-center justify-center">
+                    <Image src={'/assets/images/hero.webp'} alt="hero" width={800} height={800} className="w-full h-full object-cover object-top" />
+                </div>
             </div>
         </div>
     );

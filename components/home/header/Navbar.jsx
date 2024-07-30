@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='hidden md:flex items-center gap-4'>
-                    <Link href={""} className='text-white hover:text-black bg-gradient-to-r from-[#20BE72] to-yellow-400 hover:from-yellow-400 hover:to-[#20BE72] px-8 py-2 md:py-3 rounded-full transition-all duration-300 ease-in-out'>Train AI</Link>
+                    <Link href={""} className='text-white hover:text-black bg-gradient-to-r from-[#af5caf] to-yellow-400 hover:from-yellow-400 hover:to-[#20BE72] px-8 py-2 md:py-3 rounded-full transition-all duration-300 ease-in-out'>Train AI</Link>
                 </div>
 
                 <div className='flex md:hidden'>
