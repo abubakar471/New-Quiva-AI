@@ -14,9 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-[#051119]`} >
-      <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-slate-900/0 to-transparent z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
         <Navbar />
-        {children}
+
+        <div className="bg-[#08121D]">
+          {children}
+        </div>
       </body>
     </html>
   );
