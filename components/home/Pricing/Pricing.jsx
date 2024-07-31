@@ -104,9 +104,7 @@ const Pricing = () => {
     ]
 
     const handleSwitchChange = (checked) => {
-        console.log(checked)
         setSelectedMonthly(!checked);
-        // Perform other actions, like fetching data, updating UI, etc.
     };
 
     return (
