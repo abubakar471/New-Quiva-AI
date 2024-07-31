@@ -68,7 +68,7 @@ const Footer = () => {
                         <div className='flex items-center gap-2 w-[90%]'>
                             <MdOutlineEmail className='text-gray-500' />
 
-                            <input type="email" placeholder='Enter your email' className='text-sm bg-transparent outline-none border-none w-full' />
+                            <input type="email" placeholder='Enter your email' className='text-[12px] bg-transparent outline-none border-none w-full' />
 
                         </div>
 
