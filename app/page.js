@@ -4,7 +4,6 @@ import BackgroundBoxesContainer from "@/components/home/hero/background-boxes-co
 import Partners from "@/components/home/partners/Partners";
 import Pricing from "@/components/home/Pricing/Pricing";
 import Services from "@/components/home/services/Services";
-import ServicesCardsContainer from "@/components/home/services/servicesCardsContainer";
 import Image from "next/image";
 
 export default function Home() {

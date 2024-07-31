@@ -1,5 +1,4 @@
 import React from 'react'
-import ServicesCardsContainer from './servicesCardsContainer'
 import ServicesCarousel from './ServicesCarousel'
 
 const Services = () => {
