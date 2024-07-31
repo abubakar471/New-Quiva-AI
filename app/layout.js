@@ -1,6 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/home/header/Navbar";
+import Footer from "@/components/home/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ['400', '500', '600', '700'] })
@@ -13,13 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-[#0F172A]`} >
+      <body className={`${poppins.className} bg-[#051119]`} >
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-slate-900/0 to-transparent z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
         <Navbar />
 
         <div className="bg-[#08121D]">
           {children}
         </div>
+        <Footer />
       </body>
     </html>
   );

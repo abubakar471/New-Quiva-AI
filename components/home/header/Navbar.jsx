@@ -6,7 +6,7 @@ import MobileNavbar from './MobileNavbar'
 const Navbar = () => {
     return (
         <div className='w-full bg-transparent'>
-            <div className='w-[80%] mx-auto flex items-center justify-between py-4'>
+            <div className='w-[80%] mx-auto flex items-center justify-between py-0 md:py-4'>
                 <div>
                     <Image src={"/assets/images/logo.png"} width={100} height={100} alt='Quiva AI' className='w-[60px] h-[60px]' />
                 </div>
@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='hidden md:flex items-center gap-4'>
-                    <Link href={""} className='text-white hover:text-black bg-gradient-to-r from-[#af5caf] to-yellow-400 hover:from-yellow-400 hover:to-[#20BE72] px-8 py-2 md:py-3 rounded-full transition-all duration-300 ease-in-out'>Train AI</Link>
+                    <Link href={""} className='bg-gradient-to-r from-[#20BE72] to-yellow-400 text-white px-8 py-2 md:py-2 rounded-full'>Train AI</Link>
                 </div>
 
                 <div className='flex md:hidden'>
