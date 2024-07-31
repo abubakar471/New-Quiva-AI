@@ -12,10 +12,10 @@ const Navbar = () => {
                 </div>
 
                 <div className='hidden md:flex items-center gap-8 text-white'>
-                    <Link href={"#"}>About</Link>
-                    <Link href={"#"}>Overview</Link>
-                    <Link href={"#"}>Pricing</Link>
-                    <Link href={"#"}>Changelog</Link>
+                    <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>About</Link>
+                    <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Overview</Link>
+                    <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Pricing</Link>
+                    <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Changelog</Link>
                 </div>
 
                 <div className='hidden md:flex items-center gap-4'>
