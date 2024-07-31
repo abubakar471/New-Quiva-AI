@@ -2,6 +2,7 @@ import Features from "@/components/home/features/Features";
 import FooterCta from "@/components/home/footer/FooterCta";
 import BackgroundBoxesContainer from "@/components/home/hero/background-boxes-container";
 import Partners from "@/components/home/partners/Partners";
+import Pricing from "@/components/home/Pricing/Pricing";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="text-white">
         <Partners />
         <Features />
+        <Pricing /> 
         <FooterCta />
       </div>
     </main>
