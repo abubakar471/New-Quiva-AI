@@ -4,16 +4,18 @@ import BackgroundBoxesContainer from "@/components/home/hero/background-boxes-co
 import Partners from "@/components/home/partners/Partners";
 import Pricing from "@/components/home/Pricing/Pricing";
 import Services from "@/components/home/services/Services";
+import WhyTrustUs from "@/components/home/whyTrustUs/WhyTrustUs";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <BackgroundBoxesContainer />
 
       <div className="text-white">
         <Partners />
         <Features />
+        <WhyTrustUs />
         <Services />
         <Pricing />
         <FooterCta />
