@@ -1,5 +1,4 @@
 import Features from "@/components/home/features/Features";
-import FooterCta from "@/components/home/footer/FooterCta";
 import BackgroundBoxesContainer from "@/components/home/hero/background-boxes-container";
 import Partners from "@/components/home/partners/Partners";
 import Pricing from "@/components/home/Pricing/Pricing";
@@ -18,7 +17,6 @@ export default function Home() {
         <WhyTrustUs />
         <Services />
         <Pricing />
-        <FooterCta />
       </div>
     </main>
   );

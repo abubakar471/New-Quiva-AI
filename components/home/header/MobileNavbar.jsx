@@ -23,24 +23,19 @@ export default function MobileNavbar() {
 
     const mobileNavLinks = [
         {
-            url: "/",
+            url: "/about",
             name: "About",
             id: 0,
         },
         {
-            url: "/",
-            name: "Overview",
+            url: "/pricing",
+            name: "Pricing",
             id: 1,
         },
         {
-            url: "/",
-            name: "Pricing",
-            id: 2,
-        },
-        {
-            url: "/",
+            url: "/changelog",
             name: "Changelog",
-            id: 4,
+            id: 2,
         }
     ]
 
@@ -57,14 +52,16 @@ export default function MobileNavbar() {
                 </ModalTrigger>
                 <ModalBody>
                     <ModalContent>
-                        <Image src={"/assets/images/mobile-view-logo.png"} width={150} height={150} alt="Quiva AI" className="" />
+                        <a href={"/"} className="w-fit">
+                            <Image src={"/assets/images/mobile-view-logo.png"} width={150} height={150} alt="Quiva AI" className="" />
+                        </a>
 
                         <div className="flex flex-col gap-y-4 pt-12">
                             {
                                 mobileNavLinks?.map((_, i) => (
-                                    <Link href={_?.url} key={i} className="text-2xl text-white border-b border-white pb-2 w-full">
+                                    <a href={_?.url} key={i} className="text-2xl text-white border-b border-white pb-2 w-full">
                                         {_?.name}
-                                    </Link>
+                                    </a>
                                 ))
                             }
                         </div>

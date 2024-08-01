@@ -2,6 +2,7 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/home/header/Navbar";
 import Footer from "@/components/home/footer/Footer";
+import FooterCta from "@/components/home/footer/FooterCta";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ['400', '500', '600', '700'] })
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <div className="bg-[#08121D]">
           {children}
         </div>
+        <FooterCta />
         <Footer />
       </body>
     </html>

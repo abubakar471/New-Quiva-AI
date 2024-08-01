@@ -8,13 +8,15 @@ const Navbar = () => {
         <div className='w-full bg-transparent'>
             <div className='w-[80%] mx-auto flex items-center justify-between py-0 md:py-4'>
                 <div>
-                    <Image src={"/assets/images/logo.png"} width={100} height={100} alt='Quiva AI' className='w-[60px] h-[60px]' />
+                    <Link href={"/"}>
+                        <Image src={"/assets/images/logo.png"} width={100} height={100} alt='Quiva AI' className='w-[60px] h-[60px]' />
+                    </Link>
                 </div>
 
                 <div className='hidden md:flex items-center gap-8 text-white'>
                     <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>About</Link>
-                    <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Overview</Link>
-                    <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Pricing</Link>
+                    {/* <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Overview</Link> */}
+                    <Link href={"/pricing"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Pricing</Link>
                     <Link href={"#"} className='hover:text-gray-500 transition-all duration-300 ease-in-out'>Changelog</Link>
                 </div>
 
