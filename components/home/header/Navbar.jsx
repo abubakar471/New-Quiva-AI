@@ -21,7 +21,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='hidden md:flex items-center gap-4'>
-                    <Link href={""} className='bg-gradient-to-r from-[#20BE72] to-yellow-400 text-white px-8 py-2 md:py-2 rounded-full'>Train AI</Link>
+                    <Link href={"/train"} className='bg-gradient-to-r from-[#20BE72] to-yellow-400 text-white px-8 py-2 md:py-2 rounded-full'>Train AI</Link>
                 </div>
 
                 <div className='flex md:hidden'>

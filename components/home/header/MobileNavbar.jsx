@@ -89,9 +89,9 @@ export default function MobileNavbar() {
                                 <Linkedin className="w-[]" />
                             </Link>
                         </div>
-                        <button className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28">
+                        <a href={"/train"} className="bg-black text-white text-center dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28">
                             Train AI
-                        </button>
+                        </a>
                     </ModalFooter>
                 </ModalBody>
             </Modal>
