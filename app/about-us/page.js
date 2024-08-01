@@ -22,7 +22,7 @@ const AboutPage = () => {
 
           <div className='w-full lg:w-1/3'>
             <p className='text-gray-500 text-xl'>
-              Everything you need to dominate app service fortified the industry’s #1 rated our customer support.
+              Everything you need to dominate app service fortified the industry’s #1 rated our customer support
             </p>
 
             <div className='pt-6'>
