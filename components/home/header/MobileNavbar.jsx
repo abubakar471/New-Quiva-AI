@@ -23,7 +23,7 @@ export default function MobileNavbar() {
 
     const mobileNavLinks = [
         {
-            url: "/about",
+            url: "/about-us",
             name: "About",
             id: 0,
         },

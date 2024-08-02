@@ -28,7 +28,7 @@ const Changelog = () => {
     return (
         <div className=''>
             <div className="min-h-[30rem] relative pt-20">
-                <div className="relative flex-col z-10 md:leading-tight max-w-sm  sm:max-w-lg md:max-w-2xl lg:max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent  flex gap-2 md:gap-8 px-4 lg:px-0">
+                <div className="relative flex-col z-10 md:leading-tight max-w-md  sm:max-w-lg md:max-w-2xl lg:max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent  flex gap-2 md:gap-8 px-4 lg:px-0">
 
                     <h2 className='text-4xl md:text-6xl font-bold text-gray-400 pt-4'>What&apos;s New</h2>
                     <p className="text-gray-400 !text-md">
@@ -44,7 +44,7 @@ const Changelog = () => {
             </div>
 
 
-            <div className='min-h-[20rem] max-w-sm  sm:max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto py-20'>
+            <div className='min-h-[20rem] max-w-md  sm:max-w-lg md:max-w-2xl lg:max-w-6xl mx-auto py-20'>
                 <div className='flex flex-col gap-y-10'>
                     {
                         changelogs?.map((_, i) => (
