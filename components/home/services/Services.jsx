@@ -3,7 +3,7 @@ import ServicesCarousel from './ServicesCarousel'
 
 const Services = () => {
     return (
-        <div>
+        <div >
             <div className='w-full flex items-center justify-center'>
                 <div className="px-6 py-3 rounded-full bg-green-500/5 text-[12px] text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all flex items-center gap-2">
                     Experience the future of AI with Quiva AI
@@ -17,7 +17,8 @@ const Services = () => {
                 </p>
             </div>
 
-            <div className='overflow-hidden w-full flex items-center justify-center pt-16'>
+            <div className='overflow-hidden w-full flex items-center justify-center pt-16' data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <ServicesCarousel />
             </div>
         </div>

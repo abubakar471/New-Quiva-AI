@@ -4,7 +4,9 @@ import React from 'react'
 
 const WhyTrustUsCard = ({ item }) => {
     return (
-        <div className='flex flex-col gap-y-4 items-center justify-center'>
+        <div className='flex flex-col gap-y-4 items-center justify-center' data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <div className='flex items-center justify-center rounded-xl bg-green-500/5 text-[12px] backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all p-4 w-fit text-center'>
                 {
                     item?.icon

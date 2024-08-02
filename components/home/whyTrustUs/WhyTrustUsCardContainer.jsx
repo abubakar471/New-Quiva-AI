@@ -108,11 +108,11 @@ const WhyTrustUsCardContainer = () => {
 
             {
                 data?.map((_, i) => (
-                    <div key={i} className='pb-20'>
+                    <div key={i} className='pb-20' >
                         <div className='pb-12 flex items-center justify-center'>
                             <h3 className='text-center text-white text-2xl rounded-full bg-green-500/5 text-[12px] backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all w-fit px-12'>{_?.category?.name}</h3>
                         </div>
-                        <div className='flex flex-wrap xl:flex-nowrap justify-center 2xl:justify-between w-full gap-y-10'>
+                        <div className='flex flex-wrap xl:flex-nowrap justify-center 2xl:justify-between w-full gap-y-10' >
                             {
                                 _?.category?.features?.map((item, index) => (
                                     <WhyTrustUsCard key={index} item={item} />

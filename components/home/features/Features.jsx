@@ -10,7 +10,8 @@ import Image from "next/image";
 
 const Features = () => {
     return (
-        <div className="pb-20">
+        <div className="pb-20 !overflow-y-hidden h-full" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
             <div className='w-full flex items-center justify-center'>
                 <div className="px-6 py-3 rounded-full bg-green-500/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all flex items-center gap-2">
                     <GoNorthStar className="text-[#20BE72]" />
@@ -26,7 +27,8 @@ const Features = () => {
                 </p>
             </div>
 
-            <div className="py-10">
+            <div className="py-10" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div className="w-[80%] md:w-[70%] mx-auto min-h-[50vh] rounded-xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all py-10 px-10 flex flex-wrap lg:flex-nowrap items-center gap-10">
                     <div className="pt-16 w-full lg:w-2/5">
                         <h3 className="text-2xl text-white text-left flex items-center gap-2">Powerful Features of Quiva AI <MdElectricBolt /></h3>
@@ -67,7 +69,7 @@ const Features = () => {
             </div>
 
             <div className="w-[80%] md:w-[70%] mx-auto min-h-[50vh] flex gap-10 flex-wrap lg:flex-nowrap">
-                <div className="w-full lg:w-3/6 min-h-[500px] rounded-xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all py-10 px-10">
+                <div className="w-full lg:w-3/6 min-h-[500px] rounded-xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all py-10 px-10" data-aos="zoom-in-right">
                     <div className="w-full h-[250px] bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 transition-all rounded-2xl flex items-center justify-center">
                         <Image src={`/assets/images/feature-image-02.png`} alt="" width={800} height={800} className="" />
                     </div>
@@ -83,7 +85,7 @@ const Features = () => {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-3/6 min-h-[500px] rounded-xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all py-10 px-10">
+                <div className="w-full lg:w-3/6 min-h-[500px] rounded-xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all py-10 px-10" data-aos="zoom-in-right" data-aos-delay="400">
                     <div className="pb-8">
                         <h3 className="bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 text-transparent text-4xl font-bold">
                             Custom Plans
