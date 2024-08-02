@@ -41,13 +41,13 @@ export default function BackgroundBoxesContainer() {
                         Read the docs
                     </Link>
                 </div>
-
+{/* 
                 <div className="flex items-center justify-normal pt-12 pb-6 w-[70%] mx-auto">
                     <div className="p-2 bg-white rounded-xl h-[600px] w-full flex items-center justify-center">
                         <Image src={'/assets/images/hero.webp'} alt="hero" width={800} height={800} className="w-full h-full object-cover object-top" />
                     </div>
                 </div>
-
+*/}
             </div>
         </div>
     );
