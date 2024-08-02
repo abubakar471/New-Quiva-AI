@@ -47,7 +47,7 @@ const BuyNowPage = () => {
                             <select className='py-2 px-4 w-full text-sm text-gray-400 placeholder:text-gray-400/50 bg-gray-400/10 rounded-md outline-none focus:ring-2 focus:ring-green-500/30 border-none transition-all duration-300 ease-in-out'>
                                 <option value="">Select Plan</option>
                                 <option value="essential">Essential</option>
-                                <option value="premium">Premium</option>
+                                <option value="premium">Premium 🌟</option>
                                 <option value="plus">Plus</option>
                             </select>
                         </div>
