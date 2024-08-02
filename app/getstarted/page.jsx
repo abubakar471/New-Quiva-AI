@@ -13,7 +13,7 @@ const BuyNowPage = () => {
                 <div className='p-10 rounded-3xl relative flex flex-col gap-y-4 w-full md:w-[600px] bg-white shadow-lg'>
                     <div className='w-full flex items-center justify-center'>
                         <div className='rounded-xl bg-green-500/5 text-[12px] text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all p-2 shadow-xl shadow-green-500/10 w-fit'>
-                            <Image src={`/assets/images/logo.png`} alt="logo" width={40} height={40} />
+                            <Image src={`/assets/images/logo2.png`} alt="logo" width={40} height={40} />
                         </div>
                     </div>
 
