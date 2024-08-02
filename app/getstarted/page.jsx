@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MdPayment } from 'react-icons/md';
+import { IoClose } from 'react-icons/io5';
 
 const BuyNowPage = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -102,7 +103,7 @@ const BuyNowPage = () => {
                             <select name="plan" className='py-2 px-4 w-full text-sm text-gray-400 placeholder:text-gray-400/50 bg-gray-400/10 rounded-md outline-none focus:ring-2 focus:ring-green-500/30 border-none transition-all duration-300 ease-in-out' required>
                                 <option value="">Select Plan</option>
                                 <option value="essential">Essential</option>
-                                <option value="premium">Premium</option>
+                                <option value="premium">Premium 🌟</option>
                                 <option value="plus">Plus</option>
                             </select>
                         </div>
@@ -135,6 +136,12 @@ const BuyNowPage = () => {
                     {showPopup && (
                         <div className='fixed inset-0 flex items-center justify-center'>
                             <div className='p-6 bg-green-500 text-white rounded-lg shadow-lg relative'>
+                                <button
+                                    className='absolute top-2 right-2 text-white text-2xl'
+                                    onClick={() => setShowPopup(false)}
+                                >
+                                    <IoClose />
+                                </button>
                                 <h4 className='text-2xl font-bold'>Thank You!</h4>
                                 <p>Your request has been submitted successfully.</p>
                                 <div className='absolute inset-0 bg-[radial-gradient(circle_40px_at_50%_50%, rgba(255, 255, 255, 0.5), transparent)] opacity-50'></div>
