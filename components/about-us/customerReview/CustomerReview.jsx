@@ -36,7 +36,7 @@ const CustomerReview = () => {
                 </h3>
 
                 <p className='w-[70%] mx-auto text-md text-gray-400'>
-                    Our company is comprised of people who make bold choices for our clients and the security sector. It's in our DNA to push our limits and make bold changes.
+                    Our company is comprised of people who make bold choices for our clients and the security sector. It&apos;s in our DNA to push our limits and make bold changes.
                 </p>
             </div>
             <div className='flex items-center justify-center gap-x-20 gap-y-10 w-[90%] lg:w-[70%] mx-auto flex-wrap'>

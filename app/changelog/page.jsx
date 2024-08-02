@@ -30,7 +30,7 @@ const Changelog = () => {
             <div className="min-h-[30rem] relative pt-20">
                 <div className="relative flex-col z-10 md:leading-tight max-w-sm  sm:max-w-lg md:max-w-2xl lg:max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent  flex gap-2 md:gap-8 px-4 lg:px-0">
 
-                    <h2 className='text-4xl md:text-6xl font-bold text-gray-400 pt-4'>What's New</h2>
+                    <h2 className='text-4xl md:text-6xl font-bold text-gray-400 pt-4'>What&apos;s New</h2>
                     <p className="text-gray-400 !text-md">
                         Stay up to date with all the latest features, enhancements, and fixes on our website.
                     </p>

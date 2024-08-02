@@ -23,7 +23,7 @@ const CustomerReviewCard = ({ item }) => {
             </div>
 
             <div className='pt-4 text-gray-400 text-sm leading-normal'>
-                "{item?.review}"
+                &quot;{item?.review}&ldquo;
             </div>
         </div>
     )
