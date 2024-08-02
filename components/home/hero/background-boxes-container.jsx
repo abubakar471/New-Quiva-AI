@@ -31,7 +31,7 @@ export default function BackgroundBoxesContainer() {
                 </div>
 
                 <div className="flex items-center flex-wrap justify-center gap-4 pt-4">
-                    <Link href={"#"} className="bg-[#ffffff] text-black px-8 py-2 z-20 rounded-full flex items-center gap-2">
+                    <Link href={"/getstarted"} className="bg-[#ffffff] text-black px-8 py-2 z-20 rounded-full flex items-center gap-2">
                         Get Started
                         <ArrowRight className="text-green-500" />
                     </Link>

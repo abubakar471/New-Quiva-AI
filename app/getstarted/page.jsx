@@ -5,15 +5,15 @@ import { MdPayment } from 'react-icons/md';
 
 const BuyNowPage = () => {
     return (
-        <div className='flex flex-col items-center min-h-screen w-full relative bg-[#F4F2F2]'>
+        <div className='flex flex-col items-center min-h-screen w-full relative pt-10 pb-24'>
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_400px_at_10%_0px,#004d00,transparent)] xl:bg-[radial-gradient(circle_500px_at_10%_100px,#004d00,transparent)] ">
             </div>
             <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_100px_at_10%_0px,#004d00,transparent)] xl:bg-[radial-gradient(circle_500px_at_90%_900px,#004d00,transparent)] "></div>
             <div className='pt-20'>
-                <div className='p-10 rounded-3xl relative flex flex-col gap-y-4 w-full md:w-[600px] bg-white shadow-lg'>
-                    <div className='w-full flex items-center justify-center'>
+                [                <div className='p-10 rounded-3xl relative flex flex-col gap-y-4 w-full md:w-[600px] bg-transparent shadow-lg shadow-green-500'>
+                    ]                    <div className='w-full flex items-center justify-center'>
                         <div className='rounded-xl bg-green-500/5 text-[12px] text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all p-2 shadow-xl shadow-green-500/10 w-fit'>
-                            <Image src={`/assets/images/logo2.png`} alt="logo" width={40} height={40} />
+                            <Image src={`/assets/images/logo.png`} alt="Quiva AI" width={40} height={40} />
                         </div>
                     </div>
 
