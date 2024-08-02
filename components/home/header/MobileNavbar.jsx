@@ -33,9 +33,14 @@ export default function MobileNavbar() {
             id: 1,
         },
         {
+            url: "/booking",
+            name: "Booking",
+            id: 3,
+        },
+        {
             url: "/changelog",
             name: "Changelog",
-            id: 2,
+            id: 4,
         }
     ]
 
