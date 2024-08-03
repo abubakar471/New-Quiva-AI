@@ -135,9 +135,9 @@ const BuyNowPage = () => {
 
                     {showPopup && (
                         <div className='fixed inset-0 flex items-center justify-center z-50'>
-                            <div className='p-6 bg-green-500 text-white rounded-lg shadow-lg relative'>
+                            <div className='relative p-6 bg-green-500 text-white rounded-lg shadow-lg z-50'>
                                 <button
-                                    className='absolute top-2 right-2 text-white text-2xl z-60'
+                                    className='absolute top-2 right-2 text-white text-2xl'
                                     onClick={() => setShowPopup(false)}
                                 >
                                     <IoClose />
