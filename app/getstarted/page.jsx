@@ -134,7 +134,7 @@ const BuyNowPage = () => {
                     </form>
 
                     {showPopup && (
-                        <div className='fixed inset-0 flex items-center justify-center z-50'>
+                        <div className='fixed inset-0 flex items-center justify-center z-50 pointer-events-auto'>
                             <div className='relative p-6 bg-green-500 text-white rounded-lg shadow-lg z-50'>
                                 <button
                                     className='absolute top-2 right-2 text-white text-2xl'
