@@ -6,9 +6,9 @@ const DocumentationPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-gray-200">
             <header className="bg-green-700 py-4">
-                <div className="container mx-auto px-4 flex items-center justify-between">
+                <div className="container mx-auto px-4 flex items-center justify-between flex-wrap xl:flex-nowrap gap-y-4">
                     <h1 className="text-3xl font-bold text-white">Quivox API Documentation</h1>
-                    <nav className="space-x-4">
+                    <nav className="flex flex-wrap gap-x-4 gap-y-2">
                         <a href="#overview" className="text-white hover:text-green-300">Overview</a>
                         <a href="#authentication" className="text-white hover:text-green-300">Authentication</a>
                         <a href="#endpoints" className="text-white hover:text-green-300">Endpoints</a>
