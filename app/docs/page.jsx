@@ -5,7 +5,7 @@ import React from 'react';
 const DocumentationPage = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-gray-200">
-            <header className="bg-green-700 py-4">
+            <header className="bg-green-700 py-4 fixed top-0 w-full z-10">
                 <div className="container mx-auto px-4 flex items-center justify-between flex-wrap xl:flex-nowrap gap-y-4">
                     <h1 className="text-3xl font-bold text-white">Quivox API Documentation</h1>
                     <nav className="flex flex-wrap gap-x-4 gap-y-2">
@@ -17,7 +17,7 @@ const DocumentationPage = () => {
                 </div>
             </header>
 
-            <main className="container mx-auto px-4 py-8">
+            <main className="container mx-auto px-4 py-16 pt-20">
                 <section id="overview" className="mb-12">
                     <h2 className="text-2xl font-bold mb-4 text-green-400">API Overview</h2>
                     <p className="mb-4">Welcome to the Quivox API! This API allows you to interact with our services and integrate our features into your applications. Below you&apos;ll find the documentation for our API endpoints, authentication methods, and usage examples.</p>
@@ -146,7 +146,7 @@ const DocumentationPage = () => {
                 </section>
             </main>
 
-            <footer className="bg-gray-800 py-4">
+            <footer className="bg-gray-800 py-4 mt-12">
                 <div className="container mx-auto px-4 text-center text-gray-400">
                     <p>&copy; 2024 Quivox. All rights reserved.</p>
                 </div>
