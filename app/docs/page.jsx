@@ -115,7 +115,7 @@ const DocumentationPage = () => {
                         <p className="mb-2">Retrieve information from the endpoint.</p>
                         <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
                             <code>
-                                curl -X POST "https://ai.quivox.org/api/generate-response" -H "Authorization: your_quiva_api_key" -H "Content-Type: application/json"
+                               {` curl -X POST "https://ai.quivox.org/api/generate-response" -H "Authorization: your_quiva_api_key" -H "Content-Type: application/json"`}
                             </code>
                         </pre>
                         <div className="text-gray-400">
@@ -179,7 +179,7 @@ axios.post('https://ai.quivox.org/api/v2-01/generate-response', requestBody, {
                                 <li><code>text</code>: The content of the message being sent.</li>
                                 <li><code>username</code>: Your Quiva username.</li>
                                 <li><code>id</code>: A unique ID to identify the user.</li>
-                                <li><code>location</code>: The user's location for personalized responses.</li>
+                                <li><code>location</code>: The user&apos;s location for personalized responses.</li>
                                 <li><code>time</code>: The current or specified time for personalized responses.</li>
                                 <li><code>name</code>: The name to address the user with.</li>
                             </ul>
@@ -254,7 +254,7 @@ axios.post('https://ai.quivox.org/api/v2-01/generate-response', requestBody, {
                             <tbody>
                                 <tr className="border-b border-gray-700">
                                     <td className="py-2 px-4">QuivaCoder</td>
-                                    <td className="py-2 px-4">A coding support AI which is made for Quivox's Old website.</td>
+                                    <td className="py-2 px-4">A coding support AI which is made for Quivox&apos;s Old website.</td>
                                     <td className="py-2 px-4">true</td>
                                 </tr>
                                 <tr className="border-b border-gray-700">
@@ -289,7 +289,7 @@ axios.post('https://ai.quivox.org/api/v2-01/generate-response', requestBody, {
                                 </tr>
                                 <tr className="border-b border-gray-700">
                                     <td className="py-2 px-4">leofree</td>
-                                    <td className="py-2 px-4">A small boy who's passionate about skateboarding.</td>
+                                    <td className="py-2 px-4">A small boy who&apos;s passionate about skateboarding.</td>
                                     <td className="py-2 px-4">true</td>
                                 </tr>
                                 <tr className="border-b border-gray-700">
