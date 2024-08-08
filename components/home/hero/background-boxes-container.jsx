@@ -36,7 +36,7 @@ export default function BackgroundBoxesContainer() {
                         <ArrowRight className="text-green-500" />
                     </Link>
 
-                    <Link href={"#"} className="bg-gradient-to-r from-[#20BE72] to-yellow-400 text-white font-bold px-8 py-2 z-20 rounded-full flex items-center gap-2">
+                    <Link href={"/docs"} className="bg-gradient-to-r from-[#20BE72] to-yellow-400 text-white font-bold px-8 py-2 z-20 rounded-full flex items-center gap-2">
                         <Rotate3D className="text-white" />
                         Read the docs
                     </Link>

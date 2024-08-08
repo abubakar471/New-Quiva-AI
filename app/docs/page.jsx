@@ -4,7 +4,7 @@ import React from 'react';
 
 const DocumentationPage = () => {
     return (
-        <div className="min-h-screen bg-gray-900 text-gray-200">
+        <div className="min-h-screen bg-gray-900 text-gray-200 overflow-x-hidden">
             {/* Custom Hero Section with Gradient Animation */}
             <section className="relative bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 text-white py-20 bg-fixed">
                 <div className="absolute inset-0">
@@ -15,7 +15,7 @@ const DocumentationPage = () => {
                     <div className="flex flex-col items-center justify-center text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">Quivox API Documentation</h1>
                         <p className="text-lg mb-8">Explore the comprehensive guide to integrate and use the Quivox API effectively in your applications.</p>
-                        <nav className="flex flex-wrap gap-x-4 gap-y-2">
+                        <nav className="flex flex-wrap gap-x-4 gap-y-2 items-center justify-center">
                             <a href="#overview" className="bg-green-600 hover:bg-green-500 text-white py-2 px-4 rounded-md transition">Overview</a>
                             <a href="#authentication" className="bg-green-600 hover:bg-green-500 text-white py-2 px-4 rounded-md transition">Authentication</a>
                             <a href="#endpoints" className="bg-green-600 hover:bg-green-500 text-white py-2 px-4 rounded-md transition">Endpoints</a>
@@ -62,20 +62,20 @@ const DocumentationPage = () => {
                         </pre>
                         <div className="text-gray-400">
                             <p><strong>Query Parameters:</strong></p>
-                           <ul className="list-disc ml-6">
-    <li><code>text</code>: The content of the message being sent.</li>
-    <li><code>name</code>: The username of the author of the message.</li>
-    <li><code>id</code>: The ID of the author of the message.</li>
-    <li><code>username</code>: Your username (the one making the request).</li>
-</ul>
+                            <ul className="list-disc ml-6">
+                                <li><code>text</code>: The content of the message being sent.</li>
+                                <li><code>name</code>: The username of the author of the message.</li>
+                                <li><code>id</code>: The ID of the author of the message.</li>
+                                <li><code>username</code>: Your username (the one making the request).</li>
+                            </ul>
                             <p><strong>Response:</strong></p>
                             <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
-                               <code>
-    {`{
+                                <code>
+                                    {`{
   "data": "The generated response from the API",
   "error": null
 }`}
-</code>
+                                </code>
                             </pre>
                         </div>
                     </div>
@@ -90,32 +90,32 @@ const DocumentationPage = () => {
                         </pre>
                         <div className="text-gray-400">
                             <p><strong>Query Parameters:</strong></p>
-                           <ul className="list-disc ml-6">
-    <li><code>text</code>: The content of the message being sent.</li>
-    <li><code>name</code>: The username of the author of the message.</li>
-    <li><code>id</code>: The ID of the author of the message.</li>
-    <li><code>username</code>: Your username (the one making the request).</li>
-</ul>
+                            <ul className="list-disc ml-6">
+                                <li><code>text</code>: The content of the message being sent.</li>
+                                <li><code>name</code>: The username of the author of the message.</li>
+                                <li><code>id</code>: The ID of the author of the message.</li>
+                                <li><code>username</code>: Your username (the one making the request).</li>
+                            </ul>
                             <p><strong>Response:</strong></p>
                             <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
-                                                               <code>
-    {`{
+                                <code>
+                                    {`{
   "data": {
     "text": "The generated response from the API"
   },
   "error": null
 }`}
-</code>
+                                </code>
                             </pre>
                         </div>
                     </div>
-                    
+
                     <div className="bg-gray-800 p-4 rounded-md mb-6">
                         <h3 className="text-xl font-semibold text-green-300">POST /api/generate-response</h3>
                         <p className="mb-2">Retrieve information from the endpoint.</p>
                         <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
                             <code>
-                               curl -X POST "https://ai.quivox.org/api/generate-response" -H "Authorization: your_quiva_api_key" -H "Content-Type: application/json"
+                                curl -X POST "https://ai.quivox.org/api/generate-response" -H "Authorization: your_quiva_api_key" -H "Content-Type: application/json"
                             </code>
                         </pre>
                         <div className="text-gray-400">
@@ -131,23 +131,23 @@ username: "your_username",
                             <p><strong>Response:</strong></p>
                             <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
                                 <code>
-    {`{
+                                    {`{
   "data": {
     "response": "The generated response from the API"
   },
   "error": null
 }`}
-</code>
+                                </code>
                             </pre>
                         </div>
                     </div>
 
-<div className="bg-gray-800 p-4 rounded-md mb-6">
-    <h3 className="text-xl font-semibold text-green-300">POST /api/v2-01/generate-response</h3>
-    <p className="mb-2">Generates responses with personalized information such as location and time.</p>
-    <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
-        <code>
-            {`const axios = require('axios');
+                    <div className="bg-gray-800 p-4 rounded-md mb-6">
+                        <h3 className="text-xl font-semibold text-green-300">POST /api/v2-01/generate-response</h3>
+                        <p className="mb-2">Generates responses with personalized information such as location and time.</p>
+                        <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
+                            <code>
+                                {`const axios = require('axios');
 
 const requestBody = {
     text: "your_text_here", 
@@ -171,29 +171,29 @@ axios.post('https://ai.quivox.org/api/v2-01/generate-response', requestBody, {
 .catch(error => {
     console.error('Error:', error.message);
 });`}
-        </code>
-    </pre>
-    <div className="text-gray-400">
-        <p><strong>Query Parameters:</strong></p>
-        <ul className="list-disc ml-6">
-            <li><code>text</code>: The content of the message being sent.</li>
-            <li><code>username</code>: Your Quiva username.</li>
-            <li><code>id</code>: A unique ID to identify the user.</li>
-            <li><code>location</code>: The user's location for personalized responses.</li>
-            <li><code>time</code>: The current or specified time for personalized responses.</li>
-            <li><code>name</code>: The name to address the user with.</li>
-        </ul>
-        <p><strong>Response:</strong></p>
-        <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
-            <code>
-                {`{
+                            </code>
+                        </pre>
+                        <div className="text-gray-400">
+                            <p><strong>Query Parameters:</strong></p>
+                            <ul className="list-disc ml-6">
+                                <li><code>text</code>: The content of the message being sent.</li>
+                                <li><code>username</code>: Your Quiva username.</li>
+                                <li><code>id</code>: A unique ID to identify the user.</li>
+                                <li><code>location</code>: The user's location for personalized responses.</li>
+                                <li><code>time</code>: The current or specified time for personalized responses.</li>
+                                <li><code>name</code>: The name to address the user with.</li>
+                            </ul>
+                            <p><strong>Response:</strong></p>
+                            <pre className="bg-gray-900 p-4 rounded-md overflow-x-auto">
+                                <code>
+                                    {`{
   "data": "The generated response from the API",
   "error": null
 }`}
-            </code>
-        </pre>
-    </div>
-</div>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
 
                 </section>
 
@@ -241,70 +241,70 @@ axios.post('https://ai.quivox.org/api/v2-01/generate-response', requestBody, {
                         </pre>
                     </div>
 
-                    <div className="bg-gray-800 p-4 rounded-md mb-6">
-    <h3 className="text-xl font-semibold text-green-300">Free Personalities</h3>
-    <table className="min-w-full bg-gray-900 text-gray-400">
-        <thead>
-            <tr className="border-b border-gray-700">
-                <th className="py-2 px-4 text-left">Username</th>
-                <th className="py-2 px-4 text-left">Description</th>
-                <th className="py-2 px-4 text-left">Free-to-use</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">QuivaCoder</td>
-                <td className="py-2 px-4">A coding support AI which is made for Quivox's Old website.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">spidermanfree</td>
-                <td className="py-2 px-4">A personality of Spiderman from Marvel.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">ironmanfree</td>
-                <td className="py-2 px-4">An advanced personality of Tony Stark/Iron Man from Marvel.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">batmanfree</td>
-                <td className="py-2 px-4">Advanced AI personality of Batman who protects Gotham city from DC.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">cindrellafree</td>
-                <td className="py-2 px-4">An advanced personality of Cinderella from Disney.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">quivoxsupport</td>
-                <td className="py-2 px-4">Powerful well-structured Quivox support AI.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">evelynfree</td>
-                <td className="py-2 px-4">A mysterious magical friendly girl with unknown powers.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">leofree</td>
-                <td className="py-2 px-4">A small boy who's passionate about skateboarding.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">priyafree</td>
-                <td className="py-2 px-4">A Kerala girl who is talented and lovely.</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-            <tr className="border-b border-gray-700">
-                <td className="py-2 px-4">Finnian</td>
-                <td className="py-2 px-4">A powerful, rich young man who is an entrepreneur (TopG).</td>
-                <td className="py-2 px-4">true</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+                    <div className="bg-gray-800 p-4 rounded-md mb-6 overflow-x-auto">
+                        <h3 className="text-xl font-semibold text-green-300">Free Personalities</h3>
+                        <table className="min-w-full bg-gray-900 text-gray-400">
+                            <thead>
+                                <tr className="border-b border-gray-700">
+                                    <th className="py-2 px-4 text-left">Username</th>
+                                    <th className="py-2 px-4 text-left">Description</th>
+                                    <th className="py-2 px-4 text-left">Free-to-use</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">QuivaCoder</td>
+                                    <td className="py-2 px-4">A coding support AI which is made for Quivox's Old website.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">spidermanfree</td>
+                                    <td className="py-2 px-4">A personality of Spiderman from Marvel.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">ironmanfree</td>
+                                    <td className="py-2 px-4">An advanced personality of Tony Stark/Iron Man from Marvel.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">batmanfree</td>
+                                    <td className="py-2 px-4">Advanced AI personality of Batman who protects Gotham city from DC.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">cindrellafree</td>
+                                    <td className="py-2 px-4">An advanced personality of Cinderella from Disney.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">quivoxsupport</td>
+                                    <td className="py-2 px-4">Powerful well-structured Quivox support AI.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">evelynfree</td>
+                                    <td className="py-2 px-4">A mysterious magical friendly girl with unknown powers.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">leofree</td>
+                                    <td className="py-2 px-4">A small boy who's passionate about skateboarding.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">priyafree</td>
+                                    <td className="py-2 px-4">A Kerala girl who is talented and lovely.</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                                <tr className="border-b border-gray-700">
+                                    <td className="py-2 px-4">Finnian</td>
+                                    <td className="py-2 px-4">A powerful, rich young man who is an entrepreneur (TopG).</td>
+                                    <td className="py-2 px-4">true</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 </section>
             </main>
