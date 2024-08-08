@@ -30,7 +30,7 @@ const DocumentationPage = () => {
             <main className="container mx-auto px-4 py-16">
                 <section id="overview" className="mb-12">
                     <h2 className="text-2xl font-bold mb-4 text-green-400">API Overview</h2>
-                    <p className="mb-4">Welcome to the Quivox API! This API allows you to interact with our services and integrate our features into your applications. Below you'll find the documentation for our API endpoints, authentication methods, and usage examples.</p>
+                    <p className="mb-4">Welcome to the Quivox API! This API allows you to interact with our services and integrate our features into your applications. Below you&apos;ll find the documentation for our API endpoints, authentication methods, and usage examples.</p>
                 </section>
 
                 <section id="authentication" className="mb-12">
