@@ -34,7 +34,7 @@ const BookAppointmentPage = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        content: `**New Appointment Request**\n\n**Name:** ${data.name}\n**Contact Method:** ${data.contactMethod}\n**Contact Detail:** ${data.contactDetail}\n**Date:** ${data.date}\n**Time:** ${data.time}\n**Service:** ${data.service}\n**Project Details:** ${data.projectDetails}\n**Budget:** $${data.budget}`,
+        content: `**New Appointment Request**\n\n**Name:** ${data.name}\n**Contact Method:** ${data.contactMethod}\n**Contact Detail:** ${data.contactDetail}\n**Date:** ${data.date}\n**Time:** ${data.time}\n**Service:** ${data.service}\n**Project Details:** ${data.projectDetails}`,
       }),
     })
     .then(response => {
@@ -175,7 +175,7 @@ const BookAppointmentPage = () => {
                 required
               />
             </div>
-
+            {/*
             <div className="mb-6">
               <label className="block text-sm font-bold mb-2" htmlFor="budget">
                 Budget
@@ -200,7 +200,7 @@ const BookAppointmentPage = () => {
                 <div className="text-green-400 text-center mt-2 font-bold text-lg animate-fade-in">{`$${budget}`}</div>
               </div>
             </div>
-
+            */}
             <div className="flex items-center justify-center pt-6 relative">
               <button
                 type="submit"
