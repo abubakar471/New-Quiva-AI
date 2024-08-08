@@ -10,6 +10,7 @@ const BuyNowPage = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
@@ -54,18 +55,23 @@ const BuyNowPage = () => {
             });
 
             setShowPopup(true);
+
+
         } catch (error) {
             console.error('Error sending data:', error);
         } finally {
             setIsSubmitting(false);
         }
+
+
     };
 
     return (
         <div className='flex flex-col items-center min-h-screen w-full relative pt-10 pb-24'>
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_400px_at_10%_0px,#004d00,transparent)] xl:bg-[radial-gradient(circle_500px_at_10%_100px,#004d00,transparent)] "></div>
-            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_100px_at_10%_0px,#004d00,transparent)] xl:bg-[radial-gradient(circle_500px_at_90%_900px,#004d00,transparent)] "></div>
-            <div className='pt-20'>
+            {/* <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_400px_at_10%_0px,#004d00,transparent)] xl:bg-[radial-gradient(circle_500px_at_10%_100px,#004d00,transparent)] "></div>
+            <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_100px_at_10%_0px,#004d00,transparent)] xl:bg-[radial-gradient(circle_500px_at_90%_900px,#004d00,transparent)] "></div> */}
+
+            <div className='pt-20 relative'>
                 <div className='p-10 rounded-3xl relative flex flex-col gap-y-4 w-full md:w-[600px] bg-transparent shadow-lg shadow-green-500'>
                     <div className='w-full flex items-center justify-center'>
                         <div className='rounded-xl bg-green-500/5 text-[12px] text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all p-2 shadow-xl shadow-green-500/10 w-fit'>
@@ -133,14 +139,20 @@ const BuyNowPage = () => {
                     </form>
 
                     {showPopup && (
-                        <div className='fixed inset-0 flex items-center justify-center z-50'>
-                            <div className='relative p-6 bg-green-500 text-white rounded-lg shadow-lg z-50'>
-                                <button
-                                    className='absolute top-2 right-2 text-white text-2xl'
-                                    onClick={() => setShowPopup(false)}
-                                >
-                                    <IoClose />
-                                </button>
+                        <div className='fixed inset-0 flex items-center justify-center !z-30'>
+                            <div className='relative p-6 bg-green-500 text-white rounded-lg shadow-lg w-max'>
+                                <div className='w-full flex items-end justify-end'>
+                                    <button
+                                        className='text-white text-2xl cursor-pointer z-30'
+                                        onClick={() => {
+                                            console.log("clicked");
+                                            setShowPopup(false)
+                                        }}
+                                    >
+                                        <IoClose />
+                                    </button>
+                                </div>
+
                                 <h4 className='text-2xl font-bold'>Thank You!</h4>
                                 <p>Your request has been submitted successfully.</p>
                                 <div className='absolute inset-0 bg-[radial-gradient(circle_40px_at_50%_50%, rgba(255, 255, 255, 0.5), transparent)] opacity-50'></div>
