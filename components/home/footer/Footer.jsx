@@ -8,8 +8,8 @@ import { BsFillSendFill } from "react-icons/bs";
 const Footer = () => {
     return (
         <footer className='border-t border-gray-800 w-full py-16'>
-            <div className='w-[70%] mx-auto flex flex-wrap xl:flex-nowrap gap-6 justify-between'>
-                <div className='w-full xl:w-2/6'>
+            <div className='w-[70%] mx-auto flex flex-wrap lg:flex-nowrap gap-2 lg:gap-6 justify-between'>
+                <div className='w-full 2xl:w-2/6'>
                     <Image src={"/assets/images/logo.png"} alt='Quiva AI' width={120} height={120} className='w-[80px]' />
 
                     <p className='text-gray-500 text-sm w-[85%] pt-6'>
@@ -17,7 +17,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                <div className='sm:w-full md:w-2/6 xl:w-1/6'>
+                <div className='sm:w-full md:w-2/6 2xl:w-1/6'>
                     <h3 className='text-gray-100'>Company</h3>
 
                     <div className='flex flex-col gap-2 pt-4'>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='sm:w-full md:w-2/6 xl:w-1/6'>
+                <div className='sm:w-full md:w-2/6 2xl:w-1/6'>
                     <h3 className='text-gray-100'>Products</h3>
 
                     <div className='flex flex-col gap-2 pt-4'>
@@ -39,7 +39,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='sm:w-full md:w-2/6 xl:w-1/6'>
+                <div className='sm:w-full md:w-2/6 2xl:w-1/6'>
                     <h3 className='text-gray-100'>Resources</h3>
 
                     <div className='flex flex-col gap-2 pt-4'>

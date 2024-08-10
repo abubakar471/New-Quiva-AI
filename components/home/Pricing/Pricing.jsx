@@ -3,11 +3,14 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { MdElectricBolt } from "react-icons/md";
-import { GiFlatStar } from "react-icons/gi";
+import { GiElectric, GiFlatStar } from "react-icons/gi";
 import { FaStarOfLife } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
+import { Bolt } from 'lucide-react';
+import { Cover } from '@/components/ui/cover';
+
 
 const Pricing = () => {
     const [selectedMonthly, setSelectedMonthly] = useState(true);
@@ -130,6 +133,27 @@ const Pricing = () => {
                     <h2 className='sm:w-[90%] w-[80%] lg:w-[40%] mx-auto text-4xl md:text-6xl text-center font-bold text-gray-400 pt-4'>Choose the perfect plan for your needs.</h2>
                 </div>
 
+                {/* discount */}
+                <div className="flex items-center justify-center pt-10">
+                    <div className={`bg-[#fcc221a8] text-white font-bold flex items-center gap-2 w-fit px-4 rounded-full`}>
+                        {/* <GiElectric className='text-2xl' />
+                        <span>20% Discount on Yearly Plans!</span> */}
+                        <h1 className="relative z-20">
+                            <Cover selectedMonthly={selectedMonthly}>
+                                <div className="flex items-center justify-center gap-x-2">
+                                    <span>
+                                        20% Discount on Yearly Plans!
+                                    </span>
+                                </div>
+                            </Cover>
+                        </h1>
+                    </div>
+                </div>
+
+                {/* <ShortCircuitText selectedMonthly={selectedMonthly}>
+                    20% Discount on Yearly Plans!
+                </ShortCircuitText> */}
+
                 {/* switch */}
                 <div className="flex items-center space-x-4 justify-center pt-10">
                     <Label htmlFor="monthly" className={`${selectedMonthly ? "border-2 border-green-500 bg-green-500 text-white" : "border-2 border-gray-500"} px-4 py-2 rounded-full`}>Monthly</Label>
@@ -138,7 +162,7 @@ const Pricing = () => {
                 </div>
 
                 <div className='w-[70%] mx-auto flex flex-wrap xl:flex-nowrap gap-4 rounded-3xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:backdrop-blur-md transition-all mt-20 min-h-[50vh]' data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom">
+                    data-aos-anchor-placement="top-bottom">
                     {
                         pricingData?.map((_, i) => (
                             <div key={i} className={`w-full h-auto xl:w-1/3 py-10 px-6 ${_?.plan === 'Premium' && "border-2 border-[#20BE72] rounded-xl"} `}>
