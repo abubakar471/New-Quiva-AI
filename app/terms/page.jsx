@@ -36,7 +36,7 @@ const TermsOfServicePage = () => {
           
           <h3 className='text-2xl font-bold text-gray-300 mb-6'>2. Use of Our Services</h3>
           <p className='text-gray-400 mb-6'>
-            You agree to use our services only for lawful purposes and in a manner that does not infringe on the rights of, or restrict or inhibit anyone else's use and enjoyment of our services. You are responsible for any activity that occurs under your account.
+            You agree to use our services only for lawful purposes and in a manner that does not infringe on the rights of, or restrict or inhibit anyone else&apos;s use and enjoyment of our services. You are responsible for any activity that occurs under your account.
           </p>
           
           <h3 className='text-2xl font-bold text-gray-300 mb-6'>3. Account Security</h3>

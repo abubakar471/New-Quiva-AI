@@ -59,7 +59,7 @@ const Features = () => {
                         </p>
 
                         <p className="text-gray-400 text-md pt-6 w-full xl:w-[80%]">
-                            Quiva AI's capabilities extend beyond text and image processing. Our platform offers robust Natural Language Processing (NLP) tools for tasks such as text classification, entity extraction, and topic modeling. Additionally, Quiva AI excels in data analysis, providing actionable insights through advanced statistical modeling and machine learning techniques.
+                            Quiva AI&apos;s capabilities extend beyond text and image processing. Our platform offers robust Natural Language Processing (NLP) tools for tasks such as text classification, entity extraction, and topic modeling. Additionally, Quiva AI excels in data analysis, providing actionable insights through advanced statistical modeling and machine learning techniques.
                         </p>
 
                         <div className="mt-12 w-full">
