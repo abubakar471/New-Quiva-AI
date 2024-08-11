@@ -142,7 +142,7 @@ const Pricing = () => {
                             <Cover selectedMonthly={selectedMonthly}>
                                 <div className="flex items-center justify-center gap-x-2">
                                     <span>
-                                        20% Discount on Yearly Plans!
+                                       🗲 20% Discount on Yearly Plans!
                                     </span>
                                 </div>
                             </Cover>
