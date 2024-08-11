@@ -15,7 +15,7 @@ const Features = () => {
     const [circles, setCircles] = useState([]);
     useEffect(() => {
         const createCircles = () => {
-            const numCircles = 100; // Adjust the number of circles
+            const numCircles = 70; // Adjust the number of circles
             const newCircles = [];
             for (let i = 0; i < numCircles; i++) {
                 const size = Math.random() * 20 + 5; // Adjust circle size range
@@ -111,41 +111,43 @@ const Features = () => {
 
             </div>
 
-            <div className="w-[80%] md:w-[70%] mx-auto min-h-[50vh] flex gap-10 flex-wrap lg:flex-nowrap">
-                <div className="w-full lg:w-3/6 min-h-[500px] rounded-xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all py-10 px-10" data-aos="zoom-in-right">
-                    <div className="w-full h-[250px] bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 transition-all rounded-2xl flex items-center justify-center">
-                        <Image src={`/assets/images/feature-image-02.png`} alt="" width={800} height={800} className="" />
-                    </div>
+            <div className="w-[80%] md:w-[70%] mx-auto min-h-[20vh] flex gap-10 flex-wrap lg:flex-nowrap">
+                <div className="w-full lg:w-3/6 min-h-[200px] rounded-xl bg-gradient-to-r from-transparent from-10% to-[#29ec74]/10 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/5 hover:backdrop-blur-md transition-all py-10 px-10" data-aos="zoom-in-right">
+                    <ul className="pt-0 list-disc">
+                        <li className="bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 text-transparent text-4xl font-bold">Innovation</li>
 
-
-                    <div className="pt-8">
-                        <h3 className="bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 text-transparent text-4xl font-bold">Innovation</h3>
-
-                        <p className="text-gray-400 pt-4">
+                        <li className="text-gray-400 pt-4">
                             Quiva AI is at the forefront of AI innovation, continually advancing the capabilities of artificial intelligence to deliver smarter, more efficient solutions.
+                        </li>
 
-                        </p>
-                    </div>
+                        <li className="text-gray-400 pt-4">
+                            Quiva AI is at the forefront of pushing the boundaries of artificial intelligence. Our unwavering commitment to innovation drives us to develop cutting-edge solutions that redefine industry standards. We are dedicated to harnessing the full potential of AI to create intelligent systems that deliver exceptional value and transformative results.
+                        </li>
+
+                        <li className="text-gray-400 pt-4">
+                            Through relentless research and development, we are committed to staying ahead of the curve and delivering groundbreaking AI solutions that empower businesses and individuals to achieve their goals.
+                        </li>
+                    </ul>
                 </div>
 
-                <div className="w-full lg:w-3/6 min-h-[500px] rounded-xl bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:backdrop-blur-md transition-all py-10 px-10" data-aos="zoom-in-right" data-aos-delay="400">
-                    <div className="pb-8">
-                        <h3 className="bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 text-transparent text-4xl font-bold">
+                <div className="w-full lg:w-3/6 min-h-[200px] rounded-xl bg-gradient-to-r from-transparent from-10% to-[#29ec74]/10 text-sm text-white backdrop-blur-sm border border-white/10 hover:bg-white/5 hover:backdrop-blur-md transition-all py-10 px-10" data-aos="zoom-in-right" data-aos-delay="400">
+                    <ul className="pb-8 list-disc">
+                        <li className="bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600 text-transparent text-4xl font-bold">
                             Custom Plans
-                        </h3>
+                        </li>
 
-                        <p className="text-gray-400 pt-4">
+                        <li className="text-gray-400 pt-4">
                             Quiva AI offers Custom Plans that cater to users with specific needs and requirements beyond the standard offerings
+                        </li>
 
-                        </p>
-                    </div>
+                        <li className="text-gray-400 pt-4">
+                            offer comprehensive Custom Plans designed to address specific requirements beyond our standard packages. Our team of AI experts will collaborate closely with you to understand your goals and develop a tailored solution that maximizes the value of our technology.
+                        </li>
 
-                    <div className="w-full h-[250px] bg-white/5 text-sm text-white backdrop-blur-sm border border-white/10 transition-all rounded-2xl flex items-center justify-center">
-                        <Image src={`/assets/images/feature-image-01.png`} alt="" width={800} height={800} className="w-[300px] object-cover" />
-                    </div>
-
-
-
+                        <li className="text-gray-400 pt-4">
+                            Whether you require specialized features, increased processing power, or dedicated support, our Custom Plans provide the flexibility and scalability to meet your exact needs.
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div >
